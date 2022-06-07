@@ -1,7 +1,23 @@
+"""first challenge from 'Data Analysis with Python Projects'
+on FreeCodeCamp.org
+"""
+from typing import List, Dict
 import numpy as np
 
 
-def calculate(list):
+def calculate(list: List) -> Dict:
+    """takes mean, variance, std, max, min and sum from a list
+    using array
+
+    Args:
+        list (List): list with 9 numbers
+
+    Raises:
+        ValueError: only lists with 9 numbers are allowed
+
+    Returns:
+        Dict: result
+    """
     if len(list) != 9:
         raise ValueError('List must contain nine numbers.')
     else:
